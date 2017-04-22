@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+   <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' name='viewport' />
+    <title>TicTactoe</title>
+    <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script-->
+    <!--link rel="stylesheet" href="css/common.css"-->
+    <style media="screen">
+      html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        display: table;
+
+      }
+      #divform{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        display: table;
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        align: center;
+      }
+      .inputboxlength{
+        width:15%;
+        height:30px;
+      }
+	  .playerBoxLen{
+		width:40%;
+  height:30px;
+	  }
+    </style>
+  </head>
+  <body bgcolor = "black" style='color:white;background-image: url("img/backgrnd1.jpg");'>
+    <div align="center" id="divform">
+      <form action="tictactoe.html" method="get">
+        <table align="center" bgcolor="black" border=20 cellpadding="0">
+          <tr>
+            <td align = "center"><b><strong style="font-size: 25px;">Select Box Size:</strong> </b></td>
+          </tr>
+          <tr>
+          <td align = "center"><b><strong style="font-size: 25px;"><input type="number" class="inputboxlength" name="boxlength" min="4" max="8" value="4"> x <input type="number" class="inputboxlength" name="boxheight" min="4" max="8" value="4"></strong></td>
+          </tr>
+          <tr>
+            <td align = "center"><strong style="font-size: 25px;"><b>Select number of Players </b></strong></td>
+          </tr>
+           <tr>
+           <td align = "center"><strong style="font-size: 25px;"><input type="number" class="playerBoxLen" name="player" min="2" max="3" value="2"></strong></td>
+          </tr>
+          <tr>
+            <td style="text-align:center"><input type="submit" style='color:white;width:100%;height:70px;background-color:black' value="Start Game!"></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>
